@@ -857,6 +857,11 @@ header {
 .trojena__footer__social__media__links ul li:not(:last-child) {
   margin-right: 14px;
 }
+.trojena__footer__social__media__links ul li a img{
+  height: 42px;
+  width: 42px;
+  object-fit: contain;
+}
 
 .trojena__footer__social__media__links ul>li>a>svg:hover {
   scale: 1.1;
