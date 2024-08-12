@@ -695,7 +695,7 @@ span.error {
     flex-direction: column;
     align-items: center;
     padding: 45px 28.5px;
-    padding-top: ;
+    padding-top: 0;
   }
 
   .trojena__footer__logo__container {
