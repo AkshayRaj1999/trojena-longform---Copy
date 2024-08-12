@@ -977,4 +977,5 @@ header {
 }
 .layout-canvas-a{
   position:relative !important; 
+  z-index: 1 !important;
   }
