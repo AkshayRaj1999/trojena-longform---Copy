@@ -382,7 +382,8 @@ span.error {
   background-color: white;
   margin-left: 24px;
 }
-.contact__form__input__fields input[type="radio"]{
+
+.contact__form__input__fields input[type="radio"] {
   border-radius: 50%;
 }
 
@@ -858,7 +859,8 @@ header {
 .trojena__footer__social__media__links ul li:not(:last-child) {
   margin-right: 14px;
 }
-.trojena__footer__social__media__links ul li a img{
+
+.trojena__footer__social__media__links ul li a img {
   height: 42px;
   width: 42px;
   object-fit: contain;
@@ -873,9 +875,11 @@ header {
   width: max-content !important;
   z-index: 100 !important;
 }
-.marketing__permission__radio__btn__container{
+
+.marketing__permission__radio__btn__container {
   margin-bottom: 33px;
 }
+
 /* media queries starts here */
 
 @media screen and (max-width: 960px) {
@@ -945,6 +949,11 @@ header {
   .contact__form__input__fields input[type="checkbox"] {
     margin-left: 0;
   }
+
+  .iti--inline-dropdown .iti__dropdown-content {
+    width: max-content !important;
+    z-index: 100 !important;
+  }
 }
 
 .trojena__footer__wrapper__thankyou p {
@@ -961,10 +970,12 @@ header {
     width: 100%;
   }
 }
-.trojena__footer__logo__container{
+
+.trojena__footer__logo__container {
   margin-bottom: 0;
 }
-.thanks__note__content__wrapper__image__container{
+
+.thanks__note__content__wrapper__image__container {
   width: 64px;
   height: auto;
   margin-bottom: 20px;
