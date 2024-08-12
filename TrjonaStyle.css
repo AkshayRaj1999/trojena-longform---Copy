@@ -695,6 +695,7 @@ span.error {
     flex-direction: column;
     align-items: center;
     padding: 45px 28.5px;
+    padding-top: ;
   }
 
   .trojena__footer__logo__container {
@@ -870,6 +871,7 @@ header {
 
 .iti--inline-dropdown .iti__dropdown-content {
   width: max-content !important;
+  z-index: 100;
 }
 .marketing__permission__radio__btn__container{
   margin-bottom: 33px;
