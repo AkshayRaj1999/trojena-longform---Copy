@@ -169,7 +169,7 @@ header {
 }
 
 .logo__container {
-  width: 216.7px;
+  width: 210px;
   height: auto;
 }
 
@@ -469,7 +469,6 @@ span.error {
 .country__dropdown__list__container {
   margin-bottom: 48px;
   display: flex;
-  flex-direction: column;
 }
 
 .country__dropdown__list__wrapper {
@@ -557,15 +556,27 @@ span.error {
 }
 
 .trojena__footer {
-  background-color: var(--white-color);
+  background-color: #fff;
 }
 
 .trojena__footer__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 6px 0;
+  align-items: center;
+  padding: 24px 0 18px 0;
+  position: relative;
 }
-
+.trojena__footer__wrapper::after{
+  content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw; 
+  height: 0.5px;
+  background-color: #b6b6b6; 
+  z-index: 1; 
+}
 .trojena__footer__social__media__links {
   display: flex;
   align-items: center;
@@ -649,9 +660,10 @@ span.error {
     margin-bottom: 16px;
   }
 
+  /* 
   .radio__btn__container p {
     margin-top: 19px;
-  }
+  } */
 
   .radio__btn__container {
     margin-bottom: 28px;
@@ -663,13 +675,17 @@ span.error {
 
   .country__dropdown__list__container {
     margin-bottom: 28px;
+    flex-direction: column;
+    padding-left: 0;
+    row-gap: 27px;
   }
 
-  .form__section p {
+  /* .form__section p {
     margin-bottom: 36px;
-  }
+  } */
 
   .contact__form__input__fields {
+    column-gap: 16px;
     flex-direction: column;
     row-gap: 16px;
   }
@@ -770,10 +786,6 @@ header {
   border-bottom: 0.5px solid #b2b2b2;
 }
 
-.logo__container {
-  width: 216.7px;
-  height: auto;
-}
 
 .thanks__note__content__wrapper svg {
   width: 67px;
@@ -825,9 +837,7 @@ header {
   text-transform: uppercase;
 }
 
-.trojena__footer {
-  background-color: var(--white-color);
-}
+
 
 .trojena__footer__wrapper__thankyou {
   display: flex;
@@ -908,7 +918,6 @@ header {
     align-items: center;
     padding-bottom: 48px;
   }
-
   .thanks__note__content__wrapper h3 {
     font-size: 32px;
     font-weight: 700;
@@ -975,7 +984,172 @@ header {
   height: auto;
   margin-bottom: 20px;
 }
-.layout-canvas-a{
-  position:relative !important; 
+
+.layout-canvas-a {
+  position: relative !important;
   z-index: 1 !important;
+}
+
+.province__dropdown__list__container {
+  padding-left: 39px;
+}
+
+@media screen and (max-width: 960px) {
+  .province__dropdown__list__container {
+    padding-left: 0;
   }
+
+  /* .country__dorp__down__container {
+    margin-bottom: 27px;
+  } */
+}
+
+.trojena__footer__logo__container {
+  margin-bottom: 0;
+}
+
+.play__btn__container img {
+  position: unset;
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+}
+
+.thanks__note__content__wrapper__image__container {
+  width: 67px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.trojena__bottom__footer__wrapper {
+  padding: 29px 0 20px 0;
+  display: flex;
+  align-items: center;
+  /* border-top: 0.5px solid #b6b6b6; */
+}
+
+.trojena__bottom__footer__wrapper .neom__logo__container {
+  width: 44px;
+  height: auto;
+  object-fit: cover;
+}
+
+.neom__quick__links {
+  display: flex;
+  align-items: center;
+}
+
+.neom__quick__links ul {
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.72px;
+  color: var(--black-color);
+  padding-left: 71px;
+}
+
+.neom__quick__links ul li a {
+  color: var(--black-color);
+}
+
+.neom__quick__links ul li:not(:last-child):before {
+  content: '';
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background-color: #F8A324;
+  margin-right: 12px;
+}
+
+.neom__quick__links ul li:not(:first-child) {
+  padding-left: 22px;
+}
+
+.neom__quick__links span {
+  padding-left: 44px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.72px;
+  color: var(--black-color);
+  max-width: 390px;
+  text-align: left;
+}
+
+.neom__quick__links span a {
+  color: var(--black-color);
+  text-decoration: underline;
+}
+
+.trojena__footer__wrapper .neom__logo__container {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+
+  .trojena__footer__wrapper {
+    padding-bottom: 20px;
+    padding-top: 25px;
+  }
+
+  .trojena__footer__wrapper .neom__logo__container {
+    display: block;
+    width: 55px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .trojena__footer__wrapper span {
+    font-size: 10.33px;
+    line-height: 16.11px;
+    padding-bottom: 15px;
+  }
+
+  .trojena__bottom__footer__wrapper .neom__logo__container {
+    display: none;
+  }
+
+  .neom__quick__links {
+    flex-direction: column;
+  }
+
+  .neom__quick__links span {
+    padding-left: 0;
+    text-align: center;
+    max-width: unset;
+  }
+
+  .trojena__bottom__footer__wrapper {
+    padding: 18px 0 10px 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  .trojena__bottom__footer__wrapper::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100vw;
+    height: 0.25px;
+    background-color: #b6b6b6;
+  }
+
+  .neom__quick__links ul li:not(:first-child) {
+    padding-left: 9px;
+  }
+
+  .trojena__footer__social__media__links ul li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .neom__quick__links ul li:not(:last-child):before {
+    margin-right: 10px;
+  }
+
+  .neom__quick__links ul {
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
